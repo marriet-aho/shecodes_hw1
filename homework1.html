@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="try.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+
+
+h1 {
+    color: #0044cc;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.city {
+    font-weight: bold;
+}
+
+.current-temp {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.current-temp .low {
+    color: #777;
+}
+
+.current-temp .high {
+    font-weight: bold;
+}
+
+.forecast {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.day {
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    padding: 0.8rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.day h2 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+}
+
+.day p {
+    color: #555;
+    font-size: 1rem;
+}
+
+.day:hover {
+    background-color: #ffeecf;
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.highlighted {
+    background-color: #f2f2f2;
+
+}
+
+.change-city {
+    background-color: #0044cc;
+    color: #fff;
+    border: 1px solid blue;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 1rem; 
+    transition: all 200ms ease-in-out ;
+    margin: auto;
+}
+
+.change-city:hover {
+    background-color: red;
+    color: blue;
+    cursor: pointer;
+}
+
+</style>
+
+
+<body>
+<div class="weather-container">
+    <p>🌤</p>
+    <h1> Currently 21° in <span class="city">Tokyo</span></h1>
+    <p class="current-temp"><span class="low">13°</span> / <span class="high">23°</span></p>
+
+    <div class="forecast">
+        <div class="day">
+            <h2>🌨 Tomorrow</h2>
+            <p>10° / 22°</p>
+        </div>
+        <div class="day">
+            <h2>🌥 Saturday</h2>
+            <p>15° / 17°</p>
+        </div>
+        <div class="day highlighted">
+            <h2>☀Sunday</h2>
+            <p>25° / 28°</p>
+        </div>
+    </div>
+
+    <button class="change-city">Change city</button> 
+    <p>Coded by Marriet</p>
+
+
+</div>
+</body>
+</html>
